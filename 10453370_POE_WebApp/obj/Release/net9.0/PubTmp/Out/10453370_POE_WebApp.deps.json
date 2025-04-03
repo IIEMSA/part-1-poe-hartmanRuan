@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "10453370_POE_WebApp/1.0.0": {
+        "runtime": {
+          "10453370_POE_WebApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "10453370_POE_WebApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

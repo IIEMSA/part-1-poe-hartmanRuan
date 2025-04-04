@@ -39,29 +39,29 @@ namespace _10453370_POE_WebApp.Controllers
 
         public async Task<IActionResult> Details(int? id)
         {
-            var events = await _context.Events.FirstOrDefaultAsync(m => m.eventID == id);
-            if (events == null)
+            var venues = await _context.Events.FirstOrDefaultAsync(m => m.venueID == id);
+            if (venues == null)
             {
                 return NotFound();
             }
-            return View(events);
+            return View(venues);
         }
 
         public async Task<IActionResult> Delete(int? id)
         {
-            var events = await _context.Events.FirstOrDefaultAsync(m => m.eventID == id);
+            var venues = await _context.Events.FirstOrDefaultAsync(m => m.eventID == id);
 
-            if (events == null)
+            if (venues == null)
             {
                 return NotFound();
             }
-            return View(events);
+            return View(venues);
         }
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
-            var events = await _context.Events.FindAsync(id);
-            _context.Events.Remove(events);
+            var venues = await _context.Venues.FindAsync(id);
+            _context.Venues.Remove(venues);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -69,7 +69,7 @@ namespace _10453370_POE_WebApp.Controllers
 
         private bool EventExists(int id)
         {
-            return _context.Events.Any(e => e.eventID == id);
+            return _context.Venues.Any(e => e.venueID == id);
         }
         public async Task<IActionResult> Edit(int? id)
         {
@@ -78,19 +78,19 @@ namespace _10453370_POE_WebApp.Controllers
                 return NotFound();
             }
 
-            var events = await _context.Events.FindAsync(id);
+            var venues = await _context.Venues.FindAsync(id);
             if (id == null)
             {
                 return NotFound();
             }
-            return View(events);
+            return View(venues);
 
 
         }
         [HttpPost]
-        public async Task<IActionResult> Edit(int id, Event events)
+        public async Task<IActionResult> Edit(int id, Venue venues)
         {
-            if (id != events.eventID)
+            if (id != venues.venueID)
             {
                 return NotFound();
             }
@@ -99,12 +99,12 @@ namespace _10453370_POE_WebApp.Controllers
             {
                 try
                 {
-                    _context.Update(events);
+                    _context.Update(venues);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!EventExists(events.eventID))
+                    if (!EventExists(venues.venueID))
                     {
                         return NotFound();
                     }
@@ -115,7 +115,7 @@ namespace _10453370_POE_WebApp.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(events);
+            return View(venues);
         }
         }
 }

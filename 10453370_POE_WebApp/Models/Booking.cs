@@ -4,9 +4,9 @@
     {
 
         public int BookingID { get; set; }
-        public string eventID { get; set; }
+        public int eventID { get; set; }
         public Event? Event { get; set; }
-        public string venueID { get; set; }
+        public int venueID { get; set; }
         public Venue? Venue { get; set; }
         public DateTime bookingDate { get; set; }
         

@@ -1,3 +1,6 @@
+using _10453370_POE_WebApp.Models;
+using Microsoft.EntityFrameworkCore;
+
 namespace _10453370_POE_WebApp
 {
     public class Program
@@ -8,6 +11,11 @@ namespace _10453370_POE_WebApp
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<EventEaseDBContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
 
             var app = builder.Build();
 

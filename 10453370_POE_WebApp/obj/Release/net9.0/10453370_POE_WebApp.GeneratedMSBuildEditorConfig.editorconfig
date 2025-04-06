@@ -48,10 +48,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lab_services_student/Desktop/part-1-poe-hartmanRuan/10453370_POE_WebApp/Views/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/lab_services_student/Desktop/part-1-poe-hartmanRuan/10453370_POE_WebApp/Views/Event/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -90,6 +86,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/lab_services_student/Desktop/part-1-poe-hartmanRuan/10453370_POE_WebApp/Views/Venue/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudWVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/Desktop/part-1-poe-hartmanRuan/10453370_POE_WebApp/Views/Venue/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudWVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/Desktop/part-1-poe-hartmanRuan/10453370_POE_WebApp/Views/Venue/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudWVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/Desktop/part-1-poe-hartmanRuan/10453370_POE_WebApp/Views/Venue/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudWVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lab_services_student/Desktop/part-1-poe-hartmanRuan/10453370_POE_WebApp/Views/Venue/Index.cshtml]

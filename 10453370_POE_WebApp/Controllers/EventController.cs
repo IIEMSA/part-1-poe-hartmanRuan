@@ -20,10 +20,12 @@ namespace _10453370_POE_WebApp.Controllers
             return View(events);
         }
 
+        [HttpGet]
         public IActionResult  Create()
         {
             return View();
         }
+        [HttpPost]
         public async Task<IActionResult> Create(Event events)
         {
             if (ModelState.IsValid)

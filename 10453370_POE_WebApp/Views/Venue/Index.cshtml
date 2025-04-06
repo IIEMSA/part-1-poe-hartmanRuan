@@ -40,7 +40,15 @@
                 @Html.DisplayFor(modelItem => item.Capacity)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ImageURL)
+                    @* Displaying the image from the ImageURL field *@
+                    @if (!string.IsNullOrEmpty(item.ImageURL))
+                    {
+                        <img src="@item.ImageURL" alt="Venue Image" style="width: 150px; height: auto;" />
+                    }
+                    else
+                    {
+                        <p>No image available</p>
+                    }
             </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Venue_ID">Edit</a> |

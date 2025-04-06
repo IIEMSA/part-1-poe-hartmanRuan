@@ -16,5 +16,7 @@ namespace _10453370_POE_WebApp.Models
         public List<Event> Event { get; set; } = new();
 
         public List<Venue> Venue { get; set; } = new();
+
+        
     }
 }

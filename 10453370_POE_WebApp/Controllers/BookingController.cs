@@ -19,10 +19,12 @@ namespace _10453370_POE_WebApp.Controllers
             return View(booking);
         }
 
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
         }
+        [HttpPost]
         public async Task<IActionResult> Create(Booking booking)
         {
             if (ModelState.IsValid)

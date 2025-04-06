@@ -32,7 +32,14 @@
             @Html.DisplayNameFor(model => model.ImageURL)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ImageURL)
+            @if (!string.IsNullOrEmpty(Model.ImageURL))
+            {
+                <img src="@Model.ImageURL" alt="Venue Image" style="width: 300px; height: auto;" />
+            }
+            else
+            {
+                <p>No image available.</p>
+            }
         </dd>
     </dl>
 </div>

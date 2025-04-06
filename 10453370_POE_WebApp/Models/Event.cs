@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace _10453370_POE_WebApp.Models
 {
@@ -15,5 +16,8 @@ namespace _10453370_POE_WebApp.Models
         public List<Booking> Booking { get; set; } = new();
 
         public List<Venue> Venue { get; set; } = new();
+
+        
+
     }
 }

@@ -15,7 +15,8 @@ namespace _10453370_POE_WebApp.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var events = await _context.Events.ToListAsync();
+            var events = await _context.Event.ToListAsync();
+
             return View(events);
         }
 
@@ -36,7 +37,7 @@ namespace _10453370_POE_WebApp.Controllers
 
         public async Task<IActionResult> Details(int? id)
         {
-            var events = await _context.Events.FirstOrDefaultAsync(m => m.eventID == id);
+            var events = await _context.Event.FirstOrDefaultAsync(m => m.Event_ID == id);
             if (events == null)
             {
                 return NotFound();
@@ -46,7 +47,7 @@ namespace _10453370_POE_WebApp.Controllers
 
         public async Task<IActionResult> Delete(int? id)
         {
-            var events = await _context.Events.FirstOrDefaultAsync(m => m.eventID == id);
+            var events = await _context.Event.FirstOrDefaultAsync(m => m.Event_ID == id);
 
             if (events == null)
             {
@@ -57,8 +58,8 @@ namespace _10453370_POE_WebApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
-            var events = await _context.Events.FindAsync(id);
-            _context.Events.Remove(events);
+            var events = await _context.Event.FindAsync(id);
+            _context.Event.Remove(events);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -66,7 +67,7 @@ namespace _10453370_POE_WebApp.Controllers
 
         private bool EventExists(int id)
         {
-            return _context.Events.Any(e => e.eventID == id);
+            return _context.Event.Any(e => e.Event_ID == id);
         }
         public async Task<IActionResult> Edit(int? id)
         {
@@ -75,7 +76,7 @@ namespace _10453370_POE_WebApp.Controllers
                 return NotFound();
             }
 
-            var events = await _context.Events.FindAsync(id);
+            var events = await _context.Event.FindAsync(id);
             if (id == null)
             {
                 return NotFound();
@@ -87,7 +88,7 @@ namespace _10453370_POE_WebApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(int id, Event events)
         {
-            if (id != events.eventID)
+            if (id != events.Event_ID)
             {
                 return NotFound();
             }
@@ -101,7 +102,7 @@ namespace _10453370_POE_WebApp.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!EventExists(events.eventID))
+                    if (!EventExists(events.Event_ID))
                     {
                         return NotFound();
                     }

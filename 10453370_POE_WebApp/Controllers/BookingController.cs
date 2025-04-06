@@ -15,7 +15,7 @@ namespace _10453370_POE_WebApp.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var booking = await _context.Bookings.ToListAsync();
+            var booking = await _context.Booking.ToListAsync();
             return View(booking);
         }
 
@@ -36,7 +36,7 @@ namespace _10453370_POE_WebApp.Controllers
 
         public async Task<IActionResult> Details(int? id)
         {
-            var booking = await _context.Events.FirstOrDefaultAsync(m => m.eventID == id);
+            var booking = await _context.Booking.FirstOrDefaultAsync(m => m.Booking_ID == id);
             if (booking == null)
             {
                 return NotFound();
@@ -46,7 +46,7 @@ namespace _10453370_POE_WebApp.Controllers
 
         public async Task<IActionResult> Delete(int? id)
         {
-            var booking = await _context.Events.FirstOrDefaultAsync(m => m.eventID == id);
+            var booking = await _context.Booking.FirstOrDefaultAsync(m => m.Booking_ID == id);
 
             if (booking == null)
             {
@@ -57,8 +57,8 @@ namespace _10453370_POE_WebApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
-            var booking = await _context.Events.FindAsync(id);
-            _context.Events.Remove(booking);
+            var booking = await _context.Booking.FindAsync(id);
+            _context.Booking.Remove(booking);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -66,7 +66,7 @@ namespace _10453370_POE_WebApp.Controllers
 
         private bool EventExists(int id)
         {
-            return _context.Bookings.Any(e => e.BookingID == id);
+            return _context.Booking.Any(e => e.Booking_ID == id);
         }
         public async Task<IActionResult> Edit(int? id)
         {
@@ -75,7 +75,7 @@ namespace _10453370_POE_WebApp.Controllers
                 return NotFound();
             }
 
-            var booking = await _context.Bookings.FindAsync(id);
+            var booking = await _context.Booking.FindAsync(id);
             if (id == null)
             {
                 return NotFound();
@@ -87,7 +87,7 @@ namespace _10453370_POE_WebApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(int id, Booking booking)
         {
-            if (id != booking.BookingID)
+            if (id != booking.Booking_ID)
             {
                 return NotFound();
             }
@@ -101,7 +101,7 @@ namespace _10453370_POE_WebApp.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!EventExists(booking.BookingID))
+                    if (!EventExists(booking.Booking_ID))
                     {
                         return NotFound();
                     }

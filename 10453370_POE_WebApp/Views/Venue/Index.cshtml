@@ -13,7 +13,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.venueName)
+                @Html.DisplayNameFor(model => model.Venue_Name)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Location)
@@ -31,7 +31,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.venueName)
+                @Html.DisplayFor(modelItem => item.Venue_Name)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Location)
@@ -43,9 +43,9 @@
                 @Html.DisplayFor(modelItem => item.ImageURL)
             </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.venueID">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.venueID">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.venueID">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.Venue_ID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Venue_ID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Venue_ID">Delete</a>
                 </td>
         </tr>
 }

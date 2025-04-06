@@ -1,13 +1,19 @@
-﻿namespace _10453370_POE_WebApp.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace _10453370_POE_WebApp.Models
 {
     public class Event
     {
-        public int eventID { get; set; }
-        public string eventName { get; set; }
-        public DateTime eventDate { get; set; }
+        [Key]
+        public int Event_ID { get; set; }
+        public string Event_Name { get; set; }
+        public DateOnly Event_Date { get; set; }
         public string Description { get; set; }
-        public int venueID { get; set; }
+        public int Venue_ID { get; set; }
+        //public Venue? Venue { get; set; }
 
-        public List<Booking> Bookings { get; set; } = new();
+        public List<Booking> Booking { get; set; } = new();
+
+        public List<Venue> Venue { get; set; } = new();
     }
 }

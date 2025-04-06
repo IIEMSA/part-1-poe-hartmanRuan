@@ -15,7 +15,7 @@ namespace _10453370_POE_WebApp.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var venues = await _context.Venues.ToListAsync();
+            var venues = await _context.Venue.ToListAsync();
             return View(venues);
         }
 
@@ -39,7 +39,7 @@ namespace _10453370_POE_WebApp.Controllers
 
         public async Task<IActionResult> Details(int? id)
         {
-            var venues = await _context.Events.FirstOrDefaultAsync(m => m.venueID == id);
+            var venues = await _context.Venue.FirstOrDefaultAsync(m => m.Venue_ID == id);
             if (venues == null)
             {
                 return NotFound();
@@ -49,7 +49,7 @@ namespace _10453370_POE_WebApp.Controllers
 
         public async Task<IActionResult> Delete(int? id)
         {
-            var venues = await _context.Events.FirstOrDefaultAsync(m => m.eventID == id);
+            var venues = await _context.Venue.FirstOrDefaultAsync(m => m.Venue_ID == id);
 
             if (venues == null)
             {
@@ -60,8 +60,8 @@ namespace _10453370_POE_WebApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
-            var venues = await _context.Venues.FindAsync(id);
-            _context.Venues.Remove(venues);
+            var venues = await _context.Venue.FindAsync(id);
+            _context.Venue.Remove(venues);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -69,7 +69,7 @@ namespace _10453370_POE_WebApp.Controllers
 
         private bool EventExists(int id)
         {
-            return _context.Venues.Any(e => e.venueID == id);
+            return _context.Venue.Any(e => e.Venue_ID == id);
         }
         public async Task<IActionResult> Edit(int? id)
         {
@@ -78,7 +78,7 @@ namespace _10453370_POE_WebApp.Controllers
                 return NotFound();
             }
 
-            var venues = await _context.Venues.FindAsync(id);
+            var venues = await _context.Venue.FindAsync(id);
             if (id == null)
             {
                 return NotFound();
@@ -90,7 +90,7 @@ namespace _10453370_POE_WebApp.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(int id, Venue venues)
         {
-            if (id != venues.venueID)
+            if (id != venues.Venue_ID)
             {
                 return NotFound();
             }
@@ -104,7 +104,7 @@ namespace _10453370_POE_WebApp.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!EventExists(venues.venueID))
+                    if (!EventExists(venues.Venue_ID))
                     {
                         return NotFound();
                     }

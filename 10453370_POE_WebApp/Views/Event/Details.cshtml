@@ -11,16 +11,16 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.eventName)
+            @Html.DisplayNameFor(model => model.Event_Name)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.eventName)
+            @Html.DisplayFor(model => model.Event_Name)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.eventDate)
+            @Html.DisplayNameFor(model => model.Event_Date)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.eventDate)
+            @Html.DisplayFor(model => model.Event_Date)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Description)
@@ -29,14 +29,14 @@
             @Html.DisplayFor(model => model.Description)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.venueID)
+            @Html.DisplayNameFor(model => model.Venue_ID)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.venueID)
+            @Html.DisplayFor(model => model.Venue_ID)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.eventID">Edit</a> |
+    <a asp-action="Edit" asp-route-id="@Model?.Event_ID">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>

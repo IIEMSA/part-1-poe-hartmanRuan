@@ -38,6 +38,7 @@ namespace _10453370_POE_WebApp.Controllers
         {
             if (ModelState.IsValid)
             {
+                
                 if (venue.ImageFile != null)
                 {
                     var blobUrl = await UploadImageToBlobAsync(venue.ImageFile);
@@ -50,6 +51,15 @@ namespace _10453370_POE_WebApp.Controllers
                 await _context.SaveChangesAsync();
                 TempData["SuccessC Message"] = "Venue created successfully";
                 return RedirectToAction(nameof(Index));
+            }
+
+
+            foreach (var kvp in ModelState)
+            {
+                foreach (var error in kvp.Value.Errors)
+                {
+                    Console.WriteLine($"Model error for {kvp.Key}: {error.ErrorMessage}");
+                }
             }
 
             return View(venue);

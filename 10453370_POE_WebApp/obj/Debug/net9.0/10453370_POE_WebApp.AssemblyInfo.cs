@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("10453370_POE_WebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+776f9ec0a8dc1f14f23d77939eba4515cabcb149")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7382e37dd1a5ff46ca140e71f894e039c4726217")]
 [assembly: System.Reflection.AssemblyProductAttribute("10453370_POE_WebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("10453370_POE_WebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

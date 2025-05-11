@@ -12,9 +12,10 @@ namespace _10453370_POE_WebApp.Models
         public string Venue_Name { get; set; }
         public string Location { get; set; }
 
-        [Required]
+        
         [Range(1, int.MaxValue, ErrorMessage = "Capacity must be greater than 0.")]
         public int Capacity { get; set; }
+        
         public string ImageURL { get; set; }
         [NotMapped]
         public IFormFile? ImageFile { get; set; }

@@ -32,6 +32,7 @@ namespace _10453370_POE_WebApp.Controllers
             {
                 _context.Add(events);
                 await _context.SaveChangesAsync();
+                TempData["SuccessC Message"] = "Event created successfully";
                 return RedirectToAction(nameof(Index));
             }
             return View(events);
@@ -57,12 +58,23 @@ namespace _10453370_POE_WebApp.Controllers
             }
             return View(events);
         }
-        [HttpPost]
-        public async Task<IActionResult> Delete(int id)
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var events = await _context.Event.FindAsync(id);
+            if (events == null) return NotFound();
+
+            var isBooked = await _context.Booking.AnyAsync(b => b.Event_ID == id);
+            if (isBooked)
+            {
+                TempData["Error Message"] = "Cannot delete event because it already exists in bookings.";
+                return RedirectToAction(nameof(Index));
+            }
+
             _context.Event.Remove(events);
             await _context.SaveChangesAsync();
+            TempData["Success Message"] = "Event deleted successfully";
             return RedirectToAction(nameof(Index));
         }
 

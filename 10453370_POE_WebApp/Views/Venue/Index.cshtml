@@ -6,6 +6,24 @@
 
 <h1>Index</h1>
 
+@if (TempData["Error Message"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["Error Message"]
+    </div>
+}
+@if (TempData["Success Message"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["Success Message"]
+    </div>
+}
+@if (TempData["SuccessC Message"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessC Message"]
+    </div>
+}
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -21,9 +39,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Capacity)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ImageURL)
-            </th>
+            <th> Venue Image</th>
             <th></th>
         </tr>
     </thead>
@@ -40,7 +56,7 @@
                 @Html.DisplayFor(modelItem => item.Capacity)
             </td>
             <td>
-                    @* Displaying the image from the ImageURL field *@
+                    
                     @if (!string.IsNullOrEmpty(item.ImageURL))
                     {
                         <img src="@item.ImageURL" alt="Venue Image" style="width: 150px; height: auto;" />

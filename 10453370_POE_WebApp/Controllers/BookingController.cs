@@ -25,14 +25,54 @@ namespace _10453370_POE_WebApp.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Booking booking)
         {
+            var selectedEvent = await _context.Event.FirstOrDefaultAsync(e => e.Event_ID == booking.Event_ID);
+
+            if (selectedEvent == null)
+            {
+                ModelState.AddModelError("", "Selected event not found.");
+                ViewData["Event"] = _context.Event.ToList();
+                ViewData["Venue"] = _context.Venue.ToList();
+                return View(booking);
+            }
+
+            // Check manually for double booking
+            var conflict = await _context.Booking
+                .Include(b => b.Event)
+                .AnyAsync(b => b.Event_ID != booking.Event_ID && b.Venue_ID == booking.Venue_ID &&
+                               b.Booking_Date == booking.Booking_Date);
+
+            if (conflict)
+            {
+                ModelState.AddModelError("", "This venue is already booked for that date.");
+                ViewData["Event"] = _context.Event.ToList();
+                ViewData["Venue"] = _context.Venue.ToList();
+                return View(booking);
+            }
+
             if (ModelState.IsValid)
             {
-                _context.Add(booking);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                try
+                {
+                    _context.Add(booking);
+                    await _context.SaveChangesAsync();
+                    TempData["SuccessC Message"] = "Booking created successfully.";
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (DbUpdateException ex)
+                {
+                    // If database constraint fails (e.g., unique key violation), show friendly message
+                    ModelState.AddModelError("", "This venue is already booked for that date.");
+                    ViewData["Events"] = _context.Event.ToList();
+                    ViewData["Venues"] = _context.Venue.ToList();
+                    return View(booking);
+                }
             }
+
+            ViewData["Events"] = _context.Event.ToList();
+            ViewData["Venues"] = _context.Venue.ToList();
             return View(booking);
         }
 
@@ -52,9 +92,11 @@ namespace _10453370_POE_WebApp.Controllers
 
             if (booking == null)
             {
+                
                 return NotFound();
             }
-            return View(booking);
+
+                return View(booking);
         }
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
@@ -62,6 +104,7 @@ namespace _10453370_POE_WebApp.Controllers
             var booking = await _context.Booking.FindAsync(id);
             _context.Booking.Remove(booking);
             await _context.SaveChangesAsync();
+            TempData["Success Message"] = "Deleted the booking successfully.";
             return RedirectToAction(nameof(Index));
         }
 

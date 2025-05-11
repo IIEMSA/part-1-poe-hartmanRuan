@@ -14,3 +14,12 @@ namespace _10453370_POE_WebApp.Models
         public DbSet<Booking> Booking { get; set; }
     }
 }
+
+
+
+/*REFERENCES
+    GeeksForGeeks. 2025. ASP.NET Web Pages - Tutorial, 2025. [Online]. 
+    Available at:
+    https://www.w3schools.com/asp/webpages_intro.asp
+    [Accessed 6 April 2025]
+*/

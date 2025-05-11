@@ -7666,6 +7666,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Azure.Core >= 1.38.0",
       "Microsoft.EntityFrameworkCore >= 9.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.3",
@@ -7722,6 +7723,10 @@
       "net9.0": {
         "targetAlias": "net9.0",
         "dependencies": {
+          "Azure.Core": {
+            "target": "Package",
+            "version": "[1.38.0, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[9.0.3, )"

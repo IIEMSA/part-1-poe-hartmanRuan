@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace _10453370_POE_WebApp.Controllers
 {
     public class BookingController : Controller
@@ -12,11 +13,11 @@ namespace _10453370_POE_WebApp.Controllers
         {
             _context = context;
         }
-
+        
         public async Task<IActionResult> Index()
         {
-            var booking = await _context.Booking.ToListAsync();
-            return View(booking);
+            var bookings = await _context.Booking.ToListAsync();
+            return View(bookings);
         }
 
         [HttpGet]

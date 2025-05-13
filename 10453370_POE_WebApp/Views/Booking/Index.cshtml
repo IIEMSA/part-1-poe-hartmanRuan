@@ -5,6 +5,8 @@
 }
 
 <h1>Index</h1>
+
+
 @if (TempData["Error Message"] != null)
 {
     <div class="alert alert-danger">
@@ -23,6 +25,9 @@
         @TempData["SuccessC Message"]
     </div>
 }
+
+
+
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -30,34 +35,42 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Event_ID)
+               Booking ID
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Venue_ID)
+                Venue ID
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Booking_Date)
+                Event ID
+            </th>
+            <th>
+                Booking Date
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var booking in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Event_ID)
+                    @Html.DisplayFor(modelItem => booking.Booking_ID)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Venue_ID)
+                    
+                    @Html.DisplayFor(modelItem => booking.Venue_ID)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Booking_Date)
+                    
+                    @Html.DisplayFor(modelItem => booking.Event_ID)
+            </td>
+            <td>
+                @booking.Booking_Date.ToShortDateString()
             </td>
 
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Booking_ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Booking_ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Booking_ID">Delete</a>
+                <a asp-action="Edit" asp-route-id="@booking.Booking_ID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@booking.Booking_ID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@booking.Booking_ID">Delete</a>
             </td>
         </tr>
 }

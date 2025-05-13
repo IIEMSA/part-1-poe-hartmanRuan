@@ -7,15 +7,16 @@ namespace _10453370_POE_WebApp.Models
     {
         [Key]
         public int Event_ID { get; set; }
-        public string Event_Name { get; set; }
+        public string? Event_Name { get; set; }
         public DateOnly Event_Date { get; set; }
-        public string Description { get; set; }
+        public string? Description { get; set; }
         public int Venue_ID { get; set; }
-        //public Venue? Venue { get; set; }
+        [ForeignKey("Venue_ID")]
+        public Venue? Venue { get; set; }
 
-        public List<Booking> Booking { get; set; } = new();
+        //public List<Booking> Booking { get; set; } = new();
 
-        public List<Venue> Venue { get; set; } = new();
+        //public List<Venue> Venue { get; set; } = new();
 
         
 

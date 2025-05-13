@@ -12,6 +12,15 @@ namespace _10453370_POE_WebApp.Models
         public DbSet<Event> Event { get; set; }
         public DbSet<Venue> Venue { get; set; }
         public DbSet<Booking> Booking { get; set; }
+
+        
+        public DbSet<BookingSummary> BookingSummary { get; set; }
+
+        
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<BookingSummary>().HasNoKey().ToView("BookingSummary");
+        }
     }
 }
 

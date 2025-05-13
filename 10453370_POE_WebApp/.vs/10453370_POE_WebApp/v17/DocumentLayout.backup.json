@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-hartmanruan\\10453370_poe_webapp\\views\\venue\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|solutionrelative:views\\venue\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-hartmanruan\\10453370_poe_webapp\\controllers\\bookingsummarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|solutionrelative:controllers\\bookingsummarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-hartmanruan\\10453370_poe_webapp\\views\\venue\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|solutionrelative:views\\venue\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-hartmanruan\\10453370_poe_webapp\\views\\bookingsummary\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|solutionrelative:views\\bookingsummary\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-hartmanruan\\10453370_poe_webapp\\models\\venue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|solutionrelative:models\\venue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-hartmanruan\\10453370_poe_webapp\\models\\bookingsummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|solutionrelative:models\\bookingsummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-hartmanruan\\10453370_poe_webapp\\controllers\\venuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|solutionrelative:controllers\\venuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-hartmanruan\\10453370_poe_webapp\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|solutionrelative:controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-hartmanruan\\10453370_poe_webapp\\views\\venue\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|solutionrelative:views\\venue\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-hartmanruan\\10453370_poe_webapp\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|solutionrelative:views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-hartmanruan\\10453370_poe_webapp\\views\\event\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|solutionrelative:views\\event\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-hartmanruan\\10453370_poe_webapp\\views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|solutionrelative:views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|c:\\users\\lab_services_student\\desktop\\part-1-poe-hartmanruan\\10453370_poe_webapp\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89194CCF-4644-439F-BE71-E37E438366B8}|10453370_POE_WebApp.csproj|solutionrelative:models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,55 +50,112 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Venue.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Models\\Venue.cs",
-              "RelativeDocumentMoniker": "Models\\Venue.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Models\\Venue.cs",
-              "RelativeToolTip": "Models\\Venue.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAuwBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T21:48:15.885Z",
-              "EditorCaption": ""
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Views\\BookingSummary\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\BookingSummary\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Views\\BookingSummary\\Index.cshtml",
+              "RelativeToolTip": "Views\\BookingSummary\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T11:44:53.682Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Views\\Venue\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Venue\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Views\\Venue\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Venue\\Edit.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACwAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-11T21:38:05.385Z",
+              "Title": "BookingSummaryController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Controllers\\BookingSummaryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookingSummaryController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Controllers\\BookingSummaryController.cs",
+              "RelativeToolTip": "Controllers\\BookingSummaryController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T11:41:45.931Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Views\\Venue\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Venue\\Create.cshtml",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Views\\Venue\\Create.cshtml",
-              "RelativeToolTip": "Views\\Venue\\Create.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "BookingSummary.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Models\\BookingSummary.cs",
+              "RelativeDocumentMoniker": "Models\\BookingSummary.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Models\\BookingSummary.cs",
+              "RelativeToolTip": "Models\\BookingSummary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T11:41:39.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Views\\Venue\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Venue\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Views\\Venue\\Index.cshtml",
+              "RelativeToolTip": "Views\\Venue\\Index.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-11T21:38:03.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T11:30:44.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Views\\Event\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Event\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Views\\Event\\Index.cshtml",
+              "RelativeToolTip": "Views\\Event\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T11:30:39.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Views\\Booking\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Booking\\Create.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Views\\Booking\\Create.cshtml",
+              "RelativeToolTip": "Views\\Booking\\Create.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T11:07:28.675Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "VenueController.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Controllers\\VenueController.cs",
-              "RelativeDocumentMoniker": "Controllers\\VenueController.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Controllers\\VenueController.cs",
-              "RelativeToolTip": "Controllers\\VenueController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAuwCYAAAAWAAAAAAAAAA==",
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "Controllers\\BookingController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwC0AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T19:28:07.58Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T10:59:00.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "Models\\Booking.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Models\\Booking.cs",
+              "RelativeToolTip": "Models\\Booking.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T10:58:56.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Views\\Booking\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Booking\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\part-1-poe-hartmanRuan\\10453370_POE_WebApp\\Views\\Booking\\Index.cshtml",
+              "RelativeToolTip": "Views\\Booking\\Index.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-13T10:41:51.415Z"
             }
           ]
         }
